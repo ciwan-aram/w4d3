@@ -1,0 +1,21 @@
+<h1>Welcome {{name}}</h1>
+<p>Random number: {{randomNumber}}</p>
+<div>
+  {{someHTML}}
+</div>
+<div>
+  {{{someHTML}}}
+</div>
+<div>
+
+  {{#if shoppingList}}
+  <h2>This is a shopping list</h2>
+  <ul>
+    {{#each shoppingList}}
+    <li>{{this}}</li>
+    {{/each}}
+  </ul>
+  {{else}}
+  <p>No items in the shopping list...</p>
+  {{/if}}
+</div>
